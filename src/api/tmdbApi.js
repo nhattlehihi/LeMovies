@@ -31,7 +31,7 @@ const tmdbApi = {
         return axiosClient.get(url,{params: {}});
     },
     search: (cate,params) => {
-        const url = 'search/' + category[cate];
+        const url = category[cate] +'search/';
         return axiosClient.get(url,params);
     },
     detail: (cate,id,params) => {
